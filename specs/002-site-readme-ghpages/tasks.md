@@ -19,8 +19,8 @@
 
 **Purpose**: Infrastructure changes that don't depend on content — devcontainer and deployment workflow
 
-- [ ] T001 [P] Add forwardPorts configuration for port 8080 in .devcontainer/devcontainer.json
-- [ ] T002 [P] Create GitHub Actions Pages deployment workflow in .github/workflows/deploy-pages.yml
+- [X] T001 [P] Add forwardPorts configuration for port 8080 in .devcontainer/devcontainer.json
+- [X] T002 [P] Create GitHub Actions Pages deployment workflow in .github/workflows/deploy-pages.yml
 
 **Checkpoint**: Devcontainer forwards port 8080; deployment workflow is ready to deploy `site/` on push to `main`.
 
@@ -34,9 +34,9 @@
 
 ### Implementation for User Story 1
 
-- [ ] T003 [US1] Remove the "Contact the project owner for repository access" step (old step 3) from the Getting Started `<ol>` in site/index.html
-- [ ] T004 [US1] Update the fork step to link directly to the public repository and remove the reference to "Once you've been added as a collaborator (step 3)" in site/index.html
-- [ ] T005 [US1] Update the introductory paragraph in the Getting Started section to reflect the new step count in site/index.html
+- [X] T003 [US1] Remove the "Contact the project owner for repository access" step (old step 3) from the Getting Started `<ol>` in site/index.html
+- [X] T004 [US1] Update the fork step to link directly to the public repository and remove the reference to "Once you've been added as a collaborator (step 3)" in site/index.html
+- [X] T005 [US1] Update the introductory paragraph in the Getting Started section to reflect the new step count in site/index.html
 
 **Checkpoint**: Getting Started section no longer mentions requesting access. Fork step links directly to the public repo. Steps are renumbered (1–4 so far).
 
@@ -50,7 +50,7 @@
 
 ### Implementation for User Story 2
 
-- [ ] T006 [US2] Add a new "Preview the site locally" step to the Getting Started `<ol>` in site/index.html with the `npx serve site -p 8080` command, Codespaces port-forwarding instructions, and a local-development aside
+- [X] T006 [US2] Add a new "Preview the site locally" step to the Getting Started `<ol>` in site/index.html with the `npx serve site -p 8080` command, Codespaces port-forwarding instructions, and a local-development aside
 
 **Checkpoint**: Getting Started now has 5 steps (1–5). Step 5 explains local preview with explicit command and Codespaces instructions.
 
@@ -64,7 +64,7 @@
 
 ### Implementation for User Story 4
 
-- [ ] T007 [US4] Add a new "Publish your site with GitHub Pages" step to the Getting Started `<ol>` in site/index.html with instructions for enabling Actions, configuring Pages source, and the expected URL format
+- [X] T007 [US4] Add a new "Publish your site with GitHub Pages" step to the Getting Started `<ol>` in site/index.html with instructions for enabling Actions, configuring Pages source, and the expected URL format
 
 **Checkpoint**: Getting Started now has 6 steps (1–6), matching the UI contract. All site content changes are complete.
 
@@ -80,7 +80,7 @@
 
 > Note: The workflow file was already created in T002 (Setup phase). This phase validates it against the contract and makes any adjustments.
 
-- [ ] T008 [US3] Verify deploy-pages.yml matches the workflow contract in contracts/ui-contract.md (permissions, concurrency, path, environment, actions versions)
+- [X] T008 [US3] Verify deploy-pages.yml matches the workflow contract in contracts/ui-contract.md (permissions, concurrency, path, environment, actions versions)
 
 **Checkpoint**: Workflow is validated and ready. Deployment will occur automatically when changes are merged to `main`.
 
@@ -94,7 +94,7 @@
 
 ### Implementation for User Story 5
 
-- [ ] T009 [US5] Rewrite README.md with project title, description, live site link, What is this section, Key Concepts section, Getting Started section (same 6 steps as site), Next Steps, and Reference Links per contracts/ui-contract.md README Contract
+- [X] T009 [US5] Rewrite README.md with project title, description, live site link, What is this section, Key Concepts section, Getting Started section (same 6 steps as site), Next Steps, and Reference Links per contracts/ui-contract.md README Contract
 
 **Checkpoint**: README mirrors site content. No brainstorming notes remain. Getting Started steps match the site.
 
@@ -104,9 +104,9 @@
 
 **Purpose**: Final validation across all files
 
-- [ ] T010 Verify site/index.html Getting Started steps match README.md Getting Started steps (same count, same order, consistent content)
-- [ ] T011 Run quickstart.md validation: serve site locally with `npx serve site -p 8080` and verify all 6 Getting Started steps render correctly in the browser
-- [ ] T012 Verify all external links in site/index.html use target="_blank" rel="noopener noreferrer"
+- [X] T010 Verify site/index.html Getting Started steps match README.md Getting Started steps (same count, same order, consistent content)
+- [X] T011 Run quickstart.md validation: serve site locally with `npx serve site -p 8080` and verify all 6 Getting Started steps render correctly in the browser
+- [X] T012 Verify all external links in site/index.html use target="_blank" rel="noopener noreferrer"
 
 ---
 
